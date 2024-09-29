@@ -1,0 +1,25 @@
+// File: PrivateExample.java
+package com.example;
+
+public class PrivateClass {
+    private int secretNumber = 42;
+
+    private void showSecret() {
+        System.out.println("The secret number is: " + secretNumber);
+    }
+
+    public void revealSecret() {
+        showSecret(); // Accessible within the same class
+    }
+}
+
+// File: AnotherClass.java
+package com.example;
+
+public class AnotherClass {
+    public static void main(String[] args) {
+        PrivateClass obj = new PrivateClass();
+        // obj.showSecret(); // Error: showSecret() has private access in PrivateClass
+        obj.revealSecret(); // This will work because it's a public method
+    }
+}

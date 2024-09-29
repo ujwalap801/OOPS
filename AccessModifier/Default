@@ -1,0 +1,32 @@
+
+
+
+// File: DefaultExample.java
+package com.example;
+
+class DefaultClass { // No access modifier means default access
+    void display() {
+        System.out.println("This is a default method.");
+    }
+}
+
+// File: AnotherClass.java
+package com.example;
+
+public class AnotherClass {
+    public static void main(String[] args) {
+        DefaultClass obj = new DefaultClass();
+        obj.display(); // Works because DefaultClass is in the same package
+    }
+}
+
+// File: DifferentPackageClass.java
+package com.other;
+
+import com.example.DefaultClass; // Error: DefaultClass has default access
+
+public class DifferentPackageClass {
+    public static void main(String[] args) {
+        // DefaultClass obj = new DefaultClass(); // Error: DefaultClass is not accessible
+    }
+}

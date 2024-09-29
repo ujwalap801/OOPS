@@ -1,0 +1,32 @@
+package AccessModifier;
+
+
+class Student{
+    public int rollNo =100;
+
+    public Student()
+    {
+        rollNo =102;
+    }
+
+    public void printRollNumber()
+    {
+        System.out.println(rollNo);
+    }
+
+    private void abc()
+    {
+        printRollNumber();
+    }
+}
+
+
+public class College{
+ public static void main(String[] args) {
+    Student s = new Student();
+    System.out.println(s.rollNo);
+   s.printRollNumber();
+ }
+}
+
+

@@ -1,0 +1,27 @@
+// File: ProtectedExample.java
+package com.example;
+
+public class ProtectedClass {
+    protected void display() {
+        System.out.println("This is a protected method.");
+    }
+}
+
+// File: SubClass.java
+package com.example;
+
+public class SubClass extends ProtectedClass {
+    public void callProtectedMethod() {
+        display(); // Accessible because SubClass inherits from ProtectedClass
+    }
+}
+
+// File: AnotherClass.java
+package com.example;
+
+public class AnotherClass {
+    public static void main(String[] args) {
+        SubClass sub = new SubClass();
+        sub.callProtectedMethod(); // Works because it accesses the protected method
+    }
+}
