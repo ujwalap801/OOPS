@@ -1,0 +1,23 @@
+// Object initialization using Method
+public class Method {
+
+    String color; // Instance variable for color
+    int age;      // Instance variable for age
+
+    // Method to initialize the object's properties
+    void initObj(String c, int a) {
+        color = c; // Assigning the parameter value to the instance variable
+        age = a;   // Assigning the parameter value to the instance variable
+    }
+
+    // Method to display the object's properties
+    void display() {
+        System.out.println(color + " " + age); // Output the color and age
+    }
+
+    public static void main(String[] args) {
+        Method cat = new Method(); // Creating a new Method object
+        cat.initObj("black", 10);  // Initializing the object's properties
+        cat.display();              // Displaying the object's properties
+    }
+}

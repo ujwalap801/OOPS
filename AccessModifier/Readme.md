@@ -1,4 +1,7 @@
 
+
+# Access modifiers in Java are keywords used to define the visibility and accessibility of classes, methods, and variables. They control how the members of a class can be accessed from other classes or packages
+
 # By using public, varaibles and methods can be access wihtin the class and outside of class of within package and outside of the package
 
 

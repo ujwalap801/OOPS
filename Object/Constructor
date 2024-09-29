@@ -1,0 +1,22 @@
+// Class definition
+class Book {
+    String title;
+
+    // Constructor
+    Book(String title) {
+        this.title = title;
+    }
+
+    void display() {
+        System.out.println("Book title: " + title);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Creating an object using a constructor
+        Book book1 = new Book("Java Programming");
+        book1.display();  // Output: Book title: Java Programming
+    }
+}

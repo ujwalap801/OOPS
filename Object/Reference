@@ -1,0 +1,28 @@
+// Class definition
+class Book {
+    String title;  // Instance variable to hold the title of the book
+    String author; // Instance variable to hold the author of the book
+
+    // Constructor to initialize the Book object
+    Book(String title, String author) {
+        this.title = title;    // Assign parameter title to the instance variable
+        this.author = author;  // Assign parameter author to the instance variable
+    }
+
+    // Method to display book information
+    void displayInfo() {
+        System.out.println("Book Title: " + title);
+        System.out.println("Author: " + author);
+    }
+}
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+        // Initializing an object using a reference variable
+        Book myBook = new Book("1984", "George Orwell"); // Create a new Book object and assign it to myBook
+
+        // Calling the method to display book information
+        myBook.displayInfo(); // Output: Book Title: 1984, Author: George Orwell
+    }
+}
